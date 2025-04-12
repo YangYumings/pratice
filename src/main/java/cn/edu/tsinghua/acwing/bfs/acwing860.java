@@ -26,6 +26,7 @@ public class acwing860 {
     }
 //    Arrays.fill(color, -1);
     // 遍历所有节点（为染色），判断染色是否冲突
+    // 0 没染色   1 第一种颜色  2第二种颜色
     for (int i = 1; i <= n; i++) {
       if (color[i] == 0) {
         if (!dfs(i, 1)) {
