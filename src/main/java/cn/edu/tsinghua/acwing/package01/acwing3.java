@@ -11,8 +11,8 @@ public class acwing3 {
 
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    int n = sc.nextInt();
-    int m = sc.nextInt();
+    n = sc.nextInt();
+    m = sc.nextInt();
     state = new int[n + 1][m + 1];
     weight = new int[n + 1];
     value = new int[n + 1];
