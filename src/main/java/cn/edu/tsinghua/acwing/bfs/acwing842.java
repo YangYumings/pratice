@@ -10,7 +10,6 @@ public class acwing842 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     n = sc.nextInt();
-    Arrays.fill(visited, false);
     DFS(1);
   }
 
@@ -23,6 +22,7 @@ public class acwing842 {
     }
     for(int i = 1; i <= n; i++){
       if(!visited[i]){
+        // 当递归返回时（回溯），path[num] 会被覆盖或重置，从而生成新的排列。
         path[num] = i;
         visited[i] = true;
         DFS(i + 1);

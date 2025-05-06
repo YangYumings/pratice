@@ -57,6 +57,7 @@ public class acsing845 {
             dis.put(cur, distance + 1);
             queue.offer(cur);
           }
+          // 第二次调用 swap 是为了将 cur 恢复为原始状态，确保后续的方向移动基于未修改的状态进行。
           cur = swap(cur, index, x2 * 3 + y2);
         }
       }

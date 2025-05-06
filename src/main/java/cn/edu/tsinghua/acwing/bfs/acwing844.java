@@ -13,6 +13,7 @@ public class acwing844 {
   static int n;
   static int m;
   static int[][] arr;
+  // arr[i][j] 的步数等于 arr[di][dj] + 1
   static int[][] dis;
   static Queue<Pair> queue = new LinkedList<>();
 
