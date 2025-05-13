@@ -14,7 +14,7 @@ public class acwing846 {
   static int[] headNodeList = new int[N];
   // 存储每条边的终点，根据边的序号就可以知道边的终点
   static int[] endPointOfEdge = new int[N];
-  // 兄弟节点：同起点的不同点
+  // 兄弟节点的边：同起点的不同点
   static int[] sibling = new int[N];
   static int edgeNumber = 0;
 
